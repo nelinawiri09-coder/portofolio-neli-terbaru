@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neli Nawiri — Portfolio</title>
+  
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #07090e;
+      color: #94a3b8;
+    }
+    .font-serif-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .bg-card {
+      background: #0d111a;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .bg-card-hover:hover {
+      border-color: rgba(99, 102, 241, 0.35);
+      transform: translateY(-2px);
+      transition: all 0.25s ease;
+    }
+    .pill-badge {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: #34d399;
+    }
+  </style>
+</head>
+<body class="selection:bg-indigo-600 selection:text-white">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="border-b border-white/5 sticky top-0 bg-[#07090e]/80 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Status -->
+      <div class="flex items-center gap-4">
+        <div class="w-8 h-8 rounded-lg bg-indigo-950/60 border border-indigo-500/30 flex items-center justify-center font-bold text-indigo-400 text-sm">
+          NN
+        </div>
+        <div>
+          <span class="text-white font-semibold text-sm tracking-wide block leading-none">Neli Nawiri</span>
+          <span class="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Portfolio</span>
+        </div>
+        <div class="hidden md:flex items-center gap-2 px-3 py-1 rounded-full pill-badge text-xs ml-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>AVAILABLE FOR PROJECTS</span>
+        </div>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="hidden md:flex items-center gap-1 bg-[#111624] p-1.5 rounded-full border border-white/10 text-xs">
+        <a href="#home" class="px-4 py-1.5 rounded-full bg-indigo-600 text-white font-medium">Home</a>
+        <a href="#about" class="px-4 py-1.5 rounded-full text-slate-400 hover:text-white transition">About</a>
+        <a href="#skills" class="px-4 py-1.5 rounded-full text-slate-400 hover:text-white transition">Skills</a>
+        <a href="#work" class="px-4 py-1.5 rounded-full text-slate-400 hover:text-white transition">Work</a>
+        <a href="#contact" class="px-4 py-1.5 rounded-full text-slate-400 hover:text-white transition">Contact</a>
+      </nav>
+
+      <!-- CTA & Avatar -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-indigo-600/20">
+          Get in Touch
+        </a>
+        <img src="profile.jpeg" alt="Neli Nawiri" class="w-9 h-9 rounded-full object-cover border border-white/20">
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 pt-12 pb-24 space-y-28">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="grid lg:grid-cols-12 gap-12 items-center pt-6">
+      
+      <!-- Left Hero Text -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full pill-badge text-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          AVAILABLE FOR NEW OPPORTUNITIES
+        </div>
+
+        <p class="text-xs font-semibold tracking-wider uppercase text-slate-400 font-mono">Portfolio & Creative Lab</p>
+
+        <h1 class="text-4xl sm:text-6xl font-serif-title font-semibold text-white leading-tight">
+          Hi, I'm <span class="text-indigo-400">Neli Nawiri</span> — <br>
+          <span class="italic font-light">Web Designer</span> & <br>
+          Creative Technologist.
+        </h1>
+
+        <p class="text-slate-400 text-base max-w-xl leading-relaxed">
+          Crafting digital experiences, modern interfaces, and scalable web & mobile solutions with meticulous attention to detail and engineering rigor.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium transition shadow-lg shadow-indigo-600/30">
+            Contact Me <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 hover:border-white/20 bg-white/5 text-slate-300 hover:text-white text-sm font-medium transition">
+            View Selected Projects <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="pt-6 border-t border-white/5 flex items-center gap-6 text-xs text-slate-400">
+          <span class="tracking-widest uppercase text-slate-500 font-mono text-[11px]">Connect</span>
+          <a href="#" class="flex items-center gap-1.5 hover:text-white"><i data-lucide="linkedin" class="w-3.5 h-3.5 text-indigo-400"></i> LinkedIn</a>
+          <span>•</span>
+          <a href="#" class="flex items-center gap-1.5 hover:text-white"><i data-lucide="globe" class="w-3.5 h-3.5 text-indigo-400"></i> Behance</a>
+          <span>•</span>
+          <a href="#" class="flex items-center gap-1.5 hover:text-white"><i data-lucide="github" class="w-3.5 h-3.5 text-indigo-400"></i> GitHub</a>
+        </div>
+      </div>
+
+      <!-- Right Hero Photo Showcase -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md rounded-3xl p-3 bg-gradient-to-b from-white/10 to-transparent border border-white/10 shadow-2xl">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-900">
+            <!-- User photo -->
+            <img src="profile.jpeg" alt="Neli Nawiri" class="w-full h-full object-cover">
+
+            <!-- Floating Badge Top Left -->
+            <div class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md border border-white/15 px-3 py-2 rounded-xl flex items-center gap-2.5">
+              <div class="w-7 h-7 rounded-lg bg-indigo-600/30 text-indigo-400 flex items-center justify-center">
+                <i data-lucide="briefcase" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left leading-tight">
+                <p class="text-xs font-bold text-white">3+ Years</p>
+                <p class="text-[10px] text-slate-400">Industry Craft</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Right -->
+            <div class="absolute bottom-4 right-4 bg-slate-950/85 backdrop-blur-md border border-white/15 px-3.5 py-2.5 rounded-xl flex items-center gap-2.5">
+              <div class="w-7 h-7 rounded-lg bg-cyan-600/30 text-cyan-400 flex items-center justify-center">
+                <i data-lucide="layers" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left leading-tight">
+                <p class="text-xs font-bold text-white">Frontend & Mobile</p>
+                <p class="text-[10px] text-slate-400">Modern Architecture</p>
+              </div>
+            </div>
+
+            <!-- Bottom Left micro-badge -->
+            <div class="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur-md border border-white/15 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 text-[10px] text-cyan-300 font-mono">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              UI/UX + Code Synergy
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE STORY & MINDSET ================= -->
+    <section id="about" class="grid lg:grid-cols-12 gap-10 items-start">
+      <!-- Left Story -->
+      <div class="lg:col-span-7 space-y-5">
+        <span class="text-[11px] font-mono tracking-widest uppercase px-3 py-1 bg-white/5 rounded-md border border-white/10 text-slate-400">The Story & Mindset</span>
+        <h2 class="text-3xl sm:text-4xl font-serif-title font-semibold text-white leading-tight">
+          Engineering digital solutions that merge visual beauty with resilient architecture.
+        </h2>
+        <div class="space-y-4 text-slate-400 text-sm leading-relaxed">
+          <p>
+            Experienced web and mobile developer with expertise in cutting-edge technology, skilled in developing web and mobile applications, and knowledgeable in the latest technologies. With over 3 years of experience in web and mobile development, I have successfully completed several projects.
+          </p>
+          <p>
+            My methodology balances deliberate aesthetic restraint with architectural integrity. By bridging user-centered design paradigms with clean frontend execution, I build systems that feel immediate, fluid, and effortlessly intuitive.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 pt-3">
+          <div class="bg-card p-4 rounded-xl border border-white/5">
+            <div class="flex items-center gap-2 text-indigo-400 font-semibold text-sm mb-1.5">
+              <i data-lucide="palette" class="w-4 h-4"></i> Design Systems
+            </div>
+            <p class="text-xs text-slate-400">Pixel-perfect component hierarchies with unified design tokens.</p>
+          </div>
+          <div class="bg-card p-4 rounded-xl border border-white/5">
+            <div class="flex items-center gap-2 text-cyan-400 font-semibold text-sm mb-1.5">
+              <i data-lucide="zap" class="w-4 h-4"></i> High Performance
+            </div>
+            <p class="text-xs text-slate-400">Engineered for low latency, sub-second loads, and accessible UX.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Metric Cards -->
+      <div class="lg:col-span-5 space-y-4">
+        <!-- Metric 1 -->
+        <div class="bg-card p-6 rounded-2xl flex items-start justify-between">
+          <div>
+            <p class="text-[11px] font-mono tracking-wider uppercase text-slate-500 mb-1">Experience</p>
+            <h3 class="text-3xl font-bold text-white">3+ Years</h3>
+            <p class="text-xs text-slate-400 mt-1">Delivering responsive Web & Mobile applications</p>
+          </div>
+          <div class="w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="bg-card p-6 rounded-2xl flex items-start justify-between">
+          <div>
+            <p class="text-[11px] font-mono tracking-wider uppercase text-slate-500 mb-1">Track Record</p>
+            <h3 class="text-3xl font-bold text-white">100%</h3>
+            <p class="text-xs text-slate-400 mt-1">Client satisfaction across independent & collaborative builds</p>
+          </div>
+          <div class="w-9 h-9 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+            <i data-lucide="heart" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="bg-card p-6 rounded-2xl flex items-start justify-between">
+          <div>
+            <p class="text-[11px] font-mono tracking-wider uppercase text-slate-500 mb-1">Core Standard</p>
+            <h3 class="text-base font-semibold text-white">Clean Architecture & UI/UX Driven</h3>
+            <p class="text-xs text-slate-400 mt-1">Seamless transition from wireframe to production bundle</p>
+          </div>
+          <div class="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+            <i data-lucide="network" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNOLOGIES & EXPERTISE ================= -->
+    <section id="skills" class="space-y-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-mono tracking-widest uppercase text-cyan-400 block mb-1">Professional Skills •</span>
+          <h2 class="text-3xl sm:text-4xl font-serif-title font-semibold text-white">Technologies & Expertise</h2>
+        </div>
+        <p class="text-slate-400 text-xs max-w-md">
+          Experienced web and mobile developer with expertise in cutting-edge technology. Skilled in front-end, back-end, and mobile application development.
+        </p>
+      </div>
+
+      <!-- Skill Cards -->
+      <div class="grid md:grid-cols-2 gap-5">
+        <!-- Skill 1 -->
+        <div class="bg-card p-6 rounded-2xl space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="px-2 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-white">HTML</span>
+              <div>
+                <h4 class="text-sm font-semibold text-white">HTML5</h4>
+                <p class="text-[11px] text-slate-500 font-mono">Core Standard & W3C Spec</p>
+              </div>
+            </div>
+            <span class="text-lg font-bold text-indigo-400 font-mono">90%</span>
+          </div>
+          <p class="text-xs text-slate-400">Semantic markup, strict accessibility (WCAG AA/AAA), SEO optimization, and modern HTML microformats.</p>
+          <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-indigo-500 h-1.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="bg-card p-6 rounded-2xl space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="px-2 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-white">CSS</span>
+              <div>
+                <h4 class="text-sm font-semibold text-white">CSS3</h4>
+                <p class="text-[11px] text-slate-500 font-mono">Tailwind, CSS-in-JS, Responsive</p>
+              </div>
+            </div>
+            <span class="text-lg font-bold text-cyan-400 font-mono">85%</span>
+          </div>
+          <p class="text-xs text-slate-400">Tailwind utility systems, responsive design, animations & fluid layout mathematics, complex grid architectures.</p>
+          <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-cyan-400 h-1.5 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="bg-card p-6 rounded-2xl space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="px-2 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-white">JS</span>
+              <div>
+                <h4 class="text-sm font-semibold text-white">JavaScript</h4>
+                <p class="text-[11px] text-slate-500 font-mono">Modern ES6+ & Interactive DOM</p>
+              </div>
+            </div>
+            <span class="text-lg font-bold text-indigo-400 font-mono">65%</span>
+          </div>
+          <p class="text-xs text-slate-400">ES6+ async patterns, modern frameworks, interactive DOM manipulation, and asynchronous API integrations.</p>
+          <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-indigo-500 h-1.5 rounded-full" style="width: 65%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="bg-card p-6 rounded-2xl space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="px-2 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-white">UI</span>
+              <div>
+                <h4 class="text-sm font-semibold text-white">UI/UX Design</h4>
+                <p class="text-[11px] text-slate-500 font-mono">Prototypes & Systems</p>
+              </div>
+            </div>
+            <span class="text-lg font-bold text-cyan-400 font-mono">85%</span>
+          </div>
+          <p class="text-xs text-slate-400">Design systems, user research, wireframing, high-fidelity interactive prototypes, and usability testing.</p>
+          <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+            <div class="bg-cyan-400 h-1.5 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toolchain Pills -->
+      <div class="flex flex-wrap items-center gap-3 pt-3 text-xs">
+        <span class="text-[11px] uppercase font-mono tracking-widest text-slate-500 mr-2">Capabilities & Toolchain:</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">Mobile App Dev</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">React & React Native</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">Figma Design Systems</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">Git & CI/CD Pipelines</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">RESTful APIs</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">Tailwind CSS</span>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED WORK & CASE STUDIES ================= -->
+    <section id="work" class="space-y-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 block mb-1">Selected Projects</span>
+          <h2 class="text-3xl sm:text-4xl font-serif-title font-semibold text-white">Featured Work & Case Studies</h2>
+        </div>
+        <p class="text-slate-400 text-xs max-w-md">
+          A showcase of recent web applications, mobile user interfaces, and custom design systems built with precision.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Aetheria Cloud Analytics" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">Web Application</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Aetheria Cloud Analytics</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">Next-generation cloud telemetry console with real-time reactive streaming metrics, optimized for...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>React</span>•<span>Tailwind</span>•<span>WebSockets</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="Pulse Kinetic Tracker" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">Mobile App UI</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Pulse Kinetic Tracker</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">iOS and Android wellness companion app featuring custom gesture-driven haptic interactions and...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>React Native</span>•<span>Figma</span>•<span>Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Kura Maison Atelier" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">E-Commerce Experience</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Kura Maison Atelier</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">Bespoke digital storefront for a sustainable luxury label, featuring sub-second transitions and editori...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>HTML5/CSS3</span>•<span>Headless CMS</span>•<span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Vanguard UI Framework" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">Design System</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Vanguard UI Framework</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">Enterprise multi-brand design token library bridging Figma variable definitions with accessible Tailwind...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>Figma</span>•<span>Design Tokens</span>•<span>Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=600&q=80" alt="Novaland Asset Vault" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">Fintech Portal</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Novaland Asset Vault</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">Cross-border treasury settlement engine with instant ledger reconciliation and real-time biometri...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>TypeScript</span>•<span>REST APIs</span>•<span>Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="bg-card bg-card-hover rounded-2xl overflow-hidden p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-slate-900 border border-white/5 mb-4 relative group">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Orbitron Project Hub" class="w-full h-full object-cover">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-[10px] text-cyan-400 font-mono">SaaS Dashboard</span>
+            </div>
+            <div class="flex items-center justify-between mb-1.5">
+              <h3 class="text-base font-semibold text-white">Orbitron Project Hub</h3>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500"></i>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">Intuitive workspace for remote design teams, featuring inline canvas annotation, version history,...</p>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-[11px] text-slate-500 font-mono">
+            <span>React</span>•<span>Node</span>•<span>CSS3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT & COLLABORATION ================= -->
+    <section id="contact" class="bg-card rounded-3xl p-8 sm:p-12 border border-white/10">
+      <div class="grid lg:grid-cols-12 gap-10">
+        
+        <!-- Left Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full pill-badge text-xs">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            INITIATE COLLABORATION
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-serif-title font-semibold text-white leading-tight">
+            Let's collaborate on your next vision.
+          </h2>
+
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Available for full-cycle product design, frontend architecture, and bespoke mobile engineering assignments.
+          </p>
+
+          <!-- Contact items -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+              <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase font-mono text-slate-500">Direct Email</p>
+                <a href="mailto:neli.nawiri.craft@gmail.com" class="text-xs font-medium text-white hover:underline">neli.nawiri.craft@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="clock" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase font-mono text-slate-500">Response Time</p>
+                <p class="text-xs font-medium text-white">Usually within 24 business hours</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[10px] uppercase font-mono text-slate-500">Timezone</p>
+                <p class="text-xs font-medium text-white">UTC+7 (Remote globally)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 pt-2 text-slate-400">
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center hover:text-white"><i data-lucide="code" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center hover:text-white"><i data-lucide="slack" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center hover:text-white"><i data-lucide="dribbble" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Contact Form -->
+        <div class="lg:col-span-7">
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-[11px] font-mono uppercase text-slate-400 mb-1.5">Your Name</label>
+                <input type="text" placeholder="Elena Rostova" class="w-full bg-[#111624] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500">
+              </div>
+              <div>
+                <label class="block text-[11px] font-mono uppercase text-slate-400 mb-1.5">Your Email</label>
+                <input type="email" placeholder="elena@example.com" class="w-full bg-[#111624] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-mono uppercase text-slate-400 mb-1.5">Project Type / Inquiry</label>
+              <select class="w-full bg-[#111624] border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-indigo-500">
+                <option>Web Application Development</option>
+                <option>Mobile App UI & Build</option>
+                <option>Full-stack Architecture</option>
+                <option>Design System Consulting</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-mono uppercase text-slate-400 mb-1.5">Brief Project Scope</label>
+              <textarea rows="4" placeholder="Outline your objectives, timeline, or key technical challenges..." class="w-full bg-[#111624] border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs py-3.5 rounded-xl transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+              <span>Send Message</span>
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            </button>
+
+            <p class="text-[10px] text-center text-slate-500 font-mono">
+              Your personal data is respected and encrypted. No unsolicited marketing.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/5 py-8 bg-[#06080c]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-6 rounded bg-indigo-600/30 text-indigo-400 flex items-center justify-center font-bold text-xs">
+          NN
+        </div>
+        <div>
+          <span class="text-white font-medium">Neli Nawiri</span> — <span class="text-slate-400">Senior Web & Mobile Engineer & UI/UX Designer crafting high-performance digital architectures.</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-white">GitHub</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+        <a href="#" class="hover:text-white">ReadCV</a>
+        <a href="#" class="hover:text-white">Substack</a>
+        <span class="text-[11px]">© 2024 Neli Nawiri. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
